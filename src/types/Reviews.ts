@@ -21,6 +21,7 @@ export type Opinion = {
   historia?: string;
   logros?: string;
   mecanicas?: string;
+  dlc?: string;
   conclusiones?: string;
 };
 
