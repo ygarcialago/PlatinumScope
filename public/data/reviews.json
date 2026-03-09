@@ -176,5 +176,42 @@
         "enlace": "https://store.steampowered.com/app/417860/Emily_is_Away/?l=spanish"
       }
     ]
+  },
+  {
+    "id": "unsorted_horror",
+    "titulo": "Unsorted Horror",
+    "imagen": "../assets/reviewImages/unsorted_horror.jpg",
+    "tags": [
+      "simulation",
+      "horror",
+      "atmospheric",
+      "first_person"
+    ],
+    "ficha_tecnica": {
+      "plataformas": "PC",
+      "desarrollador": "Mike Klubnika",
+      "editor": "Mike Klubnika",
+      "requisitos_minimos": {
+        "so": "Windows 8/10/11",
+        "cpu": "Intel Core i5 4460",
+        "ram": "4 GB de RAM",
+        "gpu": "GTX 780",
+        "directX": "Versión 11",
+        "disco": "1 GB de espacio disponible"
+      },
+      "sinopsis": "UNSORTED HORROR es una colección de 5 juegos cortos de terror en primera persona, que giran en torno a maquinaria detallada en un oscuro escenario distópico. La mayoría de los juegos tienen una duración aproximada de entre 10 y 15 minutos y se pueden jugar de una sola vez. Elige una caja de CD, lee la contraportada y embárcate en una pequeña aventura.\n\nLOS JUEGOS:\n1. Tartarus Engine: un grupo de valientes técnicos explota una vulnerabilidad aparentemente sin explotar de una máquina antigua.\n2. The Other Side: maneja un taladro improvisado para escapar en secreto de un búnker corrupto.\n3. Control Room Alpha: extrae datos de un nido de arañas.\n4. Carbon Steel: realiza una peligrosa investigación en una instalación abandonada.\n5. Concrete Tremor: un juego que gira en torno a explosivos plásticos y edificios de apartamentos soviéticos."
+    },
+    "opinion": {
+      "historia": "No hay historia como tal. Son juegos pequeños con un tema y no duran más de 20 minutos (a lo mucho). Lo que sí es que lo poco que se te dice es bastante interesante.",
+      "logros": "Los logros no son para nada complicados, son solo acabar cada uno de los juegos y ya.",
+      "mecanicas": "Los juegos tienen un control un poco lento, pero no es nada que no sea insufrible. Como los juegos son pequeños de espacio y no es necesario mucho ese movimiento. Lo que sí que es muy bueno es que cada juego tiene sus cosas (ej. el 2do, el taladro es bastante único en su funcionamiento. Incluso tuve que ver por internet cómo se usaba :p) y estas están muy detalladas.",
+      "conclusiones": "Para ser gratuito, recomiendo mucho estos minijuegos tanto para platinar como para jugarlo solamente ;)."
+    },
+    "enlaces_compra": [
+      {
+        "plataforma": "Steam",
+        "enlace": "https://store.steampowered.com/app/2433730/Unsorted_Horror/"
+      }
+    ]
   }
 ]
