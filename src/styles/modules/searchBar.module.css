@@ -53,6 +53,15 @@
     font-size: 1rem;
 }
 
+.link,
+.link:visited,
+.link:hover,
+.link:active {
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+}
+
 @media (max-width: 768px) {
 
   .barraContenido {

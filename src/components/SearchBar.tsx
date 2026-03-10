@@ -37,7 +37,9 @@ export default function SearchBar() {
   return (
     <section className={styles.barraBuscador}>
       <div className={styles.barraContenido}>
-        <h2 className={styles.tituloBuscador}>PlatinumScope - Reviews de mis platinos</h2>
+        <Link className={styles.link} to={'/'}>
+          <h2 className={styles.tituloBuscador}>PlatinumScope - Reviews de mis platinos</h2>
+        </Link>
         <div className={styles.buscadorContenedor}>
           <input
             type="text"
