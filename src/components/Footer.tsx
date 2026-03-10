@@ -1,8 +1,8 @@
-import '../styles/general/index.css'
+import styles from '../styles/modules/Footer.module.css'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
       <p>© Copyright - PlatinumScope</p>
       <p>
         Esta página es personal, pero creo que estaría bien dejar que la gente
