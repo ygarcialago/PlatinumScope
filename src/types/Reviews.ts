@@ -1,3 +1,5 @@
+import { GameTag } from "../enum/GameTag";
+
 export type Requisitos = {
   cpu?: string;
   ram?: string;
@@ -43,6 +45,7 @@ export type Review = {
   id: string;
   titulo: string;
   imagen?: string;
+  tags: GameTag[];
   ficha_tecnica?: FichaTecnica;
   opinion?: Opinion;
   recursos?: Recurso[];
