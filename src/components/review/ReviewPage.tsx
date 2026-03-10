@@ -8,7 +8,7 @@ import { EnlacesCompra } from "./Recursos";
 import { Sinopsis } from "./Sinopsis";
 import SearchBar from "../SearchBar";
 import '../../styles/general/review.css'
-import Header from "../Header";
+//import Header from "../Header";
 
 export default function ReviewPage() {
   const { id } = useParams<{ id: string }>();
@@ -30,7 +30,6 @@ export default function ReviewPage() {
   return (
     <>
       <SearchBar />
-      <Header />
       <main className="review-container">
 
         <h1 className="titulo">{review.titulo}</h1>
