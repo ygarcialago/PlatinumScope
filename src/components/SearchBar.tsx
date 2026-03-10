@@ -1,25 +1,37 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom"; // IMPORTANTE
+import { Link, useLocation } from "react-router-dom";
 import Fuse from "fuse.js";
 import type { Review } from "../types/Reviews";
 import ThemeToggle from "./ThemeToggle";
 import styles from '../styles/modules/searchBar.module.css'
+import type { GameTag } from "../enum/GameTag";
 
 export default function SearchBar() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Review[]>([]);
   const [fuse, setFuse] = useState<Fuse<Review> | null>(null);
+  const [allReviews, setAllReviews] = useState<Review[]>([]);
+  const [category, setCategory] = useState<GameTag | "">("");
+  const [availableCategories, setAvailableCategories] = useState<string[]>([]);
 
   const location = useLocation();
 
   useEffect(() => {
     fetch("/data/reviews.json")
       .then(res => res.json())
-      .then((data: Review[]) => setFuse(new Fuse(data, {
-        keys: ["titulo"],
-        threshold: 0.4,
-        ignoreLocation: true,
-      })))
+      .then((data: Review[]) => {
+        setFuse(new Fuse(data, {
+          keys: ["titulo"],
+          threshold: 0.4,
+          ignoreLocation: true,
+        }));
+
+        const categoriesSet = new Set<string>();
+        data.forEach(review => {
+          review.tags?.forEach(tag => categoriesSet.add(tag));
+        });
+        setAvailableCategories(["", ...Array.from(categoriesSet)]);
+      })
       .catch(err => console.error("Error cargando JSON:", err));
   }, []);
 
@@ -29,10 +41,20 @@ export default function SearchBar() {
   }, [location.pathname]);
 
   useEffect(() => {
-    if (!query || !fuse) return setResults([]);
-    const matches = fuse.search(query).map(m => m.item);
-    setResults(matches.length ? matches : [{ id: "0", titulo: "No se encontraron resultados" }]);
-  }, [query, fuse]);
+    if (!fuse) return;
+
+    let matches = allReviews;
+
+    if (query) {
+      matches = fuse.search(query).map(m => m.item);
+    }
+
+    if (category) {
+      matches = matches.filter(r => r.tags?.includes(category));
+    }
+
+    setResults(matches);
+  }, [query, category, fuse, allReviews]);
 
   return (
     <section className={styles.barraBuscador}>
@@ -40,6 +62,17 @@ export default function SearchBar() {
         <Link className={styles.link} to={'/'} onClick={() => document.title = 'PlatinumScope'}>
           <h2 className={styles.tituloBuscador}>PlatinumScope - Reviews de mis platinos</h2>
         </Link>
+        <select
+          className={styles.categorySelect}
+          value={category}
+          onChange={e => setCategory(e.target.value as GameTag | "")}
+        >
+          {availableCategories.map(cat => (
+            <option key={cat} value={cat}>
+              {cat ? cat.replace(/_/g, " ").toUpperCase() : "Categorías"} {}
+            </option>
+          ))}
+        </select>
         <div className={styles.buscadorContenedor}>
           <input
             type="text"
