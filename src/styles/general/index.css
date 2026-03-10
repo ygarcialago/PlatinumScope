@@ -39,7 +39,6 @@ html,
 body {
   height: 100%;
   background-color: var(--color-bg);
-  /* o tu color de fondo principal */
   color: var(--color-text);
 }
 
@@ -165,10 +164,6 @@ header {
     width: 90vw;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .button-theme {
-    padding: 6px;
   }
 
   .footer {
