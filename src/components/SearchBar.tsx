@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import Fuse from "fuse.js";
 import type { Review } from "../types/Reviews";
 import ThemeToggle from "./ThemeToggle";
@@ -7,6 +7,7 @@ import styles from '../styles/modules/searchBar.module.css'
 import type { GameTag } from "../enum/GameTag";
 
 export default function SearchBar() {
+  const { tag } = useParams<{ tag?: string }>();
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Review[]>([]);
   const [fuse, setFuse] = useState<Fuse<Review> | null>(null);
@@ -57,6 +58,14 @@ export default function SearchBar() {
     setResults(matches);
   }, [query, category, fuse, allReviews]);
 
+  useEffect(() => {
+    if (!tag || availableCategories.length === 0) return;
+
+    if (availableCategories.includes(tag)) {
+      setCategory(tag as GameTag);
+    }
+  }, [tag, availableCategories]);
+
   return (
     <section className={styles.barraBuscador}>
       <div className={styles.barraContenido}>
@@ -69,17 +78,13 @@ export default function SearchBar() {
           onChange={(e) => {
             const value = e.target.value as GameTag | "";
             setCategory(value);
-
-            if (value) {
-              navigate(`/categoria/${value}`);
-            }
+            if (value) navigate(`/categoria/${value}`);
           }}
         >
-          {availableCategories.map(cat => (
-            <option key={cat} value={cat}>
-              {cat ? cat.replace(/_/g, " ").toUpperCase() : "Categorías"} {}
-            </option>
-          ))}
+          {availableCategories.map(cat => {
+            if (tag && cat === "") return null;
+            return <option key={cat} value={cat}>{cat.toLocaleUpperCase() || "Categorías"}</option>;
+          })}
         </select>
         <div className={styles.buscadorContenedor}>
           <input
