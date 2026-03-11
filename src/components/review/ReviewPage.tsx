@@ -8,6 +8,7 @@ import { EnlacesCompra } from "./Recursos";
 import { Sinopsis } from "./Sinopsis";
 import SearchBar from "../SearchBar";
 import '../../styles/general/review.css'
+import Footer from "../Footer";
 //import Header from "../Header";
 
 export default function ReviewPage() {
@@ -46,6 +47,7 @@ export default function ReviewPage() {
         <Recursos recursos={review.recursos} />
         <EnlacesCompra enlaces={review.enlaces_compra} />
       </main>
+      <Footer/>
     </>
   );
 }
