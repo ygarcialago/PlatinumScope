@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Fuse from "fuse.js";
 import type { Review } from "../types/Reviews";
 import ThemeToggle from "./ThemeToggle";
@@ -10,11 +10,12 @@ export default function SearchBar() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Review[]>([]);
   const [fuse, setFuse] = useState<Fuse<Review> | null>(null);
-  const [allReviews, setAllReviews] = useState<Review[]>([]);
+  const [allReviews] = useState<Review[]>([]);
   const [category, setCategory] = useState<GameTag | "">("");
   const [availableCategories, setAvailableCategories] = useState<string[]>([]);
 
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/data/reviews.json")
@@ -65,7 +66,14 @@ export default function SearchBar() {
         <select
           className={styles.categorySelect}
           value={category}
-          onChange={e => setCategory(e.target.value as GameTag | "")}
+          onChange={(e) => {
+            const value = e.target.value as GameTag | "";
+            setCategory(value);
+
+            if (value) {
+              navigate(`/categoria/${value}`);
+            }
+          }}
         >
           {availableCategories.map(cat => (
             <option key={cat} value={cat}>
