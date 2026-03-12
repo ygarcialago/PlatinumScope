@@ -3,6 +3,14 @@
     "id": "milk_inside_a_bag_of_milk",
     "titulo": "Milk inside a bag of milk inside a bag of milk",
     "imagen": "../assets/reviewImages/milk_inside_a_bag_of_milk.jpg",
+    "tags": [
+      "indie",
+      "story_rich",
+      "atmospheric",
+      "pixel_art",
+      "short",
+      "singleplayer"
+    ],
     "ficha_tecnica": {
       "plataformas": "PC, Nintendo Switch",
       "desarrollador": "Nikita Kryukov",
@@ -36,6 +44,18 @@
     "id": "resident_evil_2_remake",
     "titulo": "Resident Evil 2 Remake",
     "imagen": "../assets/reviewImages/resident_evil_2_remake.jpg",
+    "tags": [
+      "action",
+      "adventure",
+      "horror",
+      "survival",
+      "third_person",
+      "singleplayer",
+      "atmospheric",
+      "exploration",
+      "puzzle_solving",
+      "zombies"
+    ],
     "ficha_tecnica": {
       "plataformas": "PC, Nintendo Switch, PS5, PS4, Xbox One, Xbox Series X/S",
       "desarrollador": "CAPCOM Co. Ltd",
@@ -105,6 +125,15 @@
     "id": "game.exe",
     "titulo": "Game.exe",
     "imagen": "../assets/reviewImages/game.exe.jpg",
+    "tags": [
+      "indie",
+      "horror",
+      "atmospheric",
+      "exploration",
+      "pixel_art",
+      "singleplayer",
+      "short"
+    ],
     "ficha_tecnica": {
       "plataformas": "PC",
       "desarrollador": " Punx Studios",
@@ -144,6 +173,14 @@
     "id": "emily_is_away",
     "titulo": "Emily is Away",
     "imagen": "../assets/reviewImages/emily_is_away.jpg",
+    "tags": [
+      "indie",
+      "story_rich",
+      "casual",
+      "singleplayer",
+      "retro",
+      "short"
+    ],
     "ficha_tecnica": {
       "plataformas": "PC",
       "desarrollador": " Kyle Seeley",
@@ -182,10 +219,13 @@
     "titulo": "Unsorted Horror",
     "imagen": "../assets/reviewImages/unsorted_horror.jpg",
     "tags": [
-      "simulation",
       "horror",
+      "puzzle",
+      "puzzle_solving",
       "atmospheric",
-      "first_person"
+      "singleplayer",
+      "indie",
+      "short"
     ],
     "ficha_tecnica": {
       "plataformas": "PC",
