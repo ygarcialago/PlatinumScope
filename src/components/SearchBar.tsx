@@ -84,9 +84,9 @@ export default function SearchBar() {
             if (value) navigate(`/categoria/${value}`);
           }}
         >
-          {availableCategories.map(cat => {
+          {availableCategories.sort().map(cat => {
             if (tag && cat === "") return null;
-            return <option key={cat} value={cat}>{cat.toLocaleUpperCase() || "Categorías"}</option>;
+            return <option key={cat} value={cat}>{cat.replace(/_/g, " ").toLocaleUpperCase() || "Categorías"}</option>;
           })}
         </select>
         <div className={styles.buscadorContenedor}>
