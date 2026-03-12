@@ -6,6 +6,7 @@ import { Opiniones } from "./Opiniones";
 import { Recursos } from "./Recursos";
 import { EnlacesCompra } from "./Recursos";
 import { Sinopsis } from "./Sinopsis";
+import { TagsSection } from "./Tags";
 import SearchBar from "../SearchBar";
 import '../../styles/general/review.css'
 import Footer from "../Footer";
@@ -42,6 +43,7 @@ export default function ReviewPage() {
         )}
 
         <FichaTecnica ficha={review.ficha_tecnica} />
+        <TagsSection tags={review.tags} />
         <Sinopsis sinopsis={review.ficha_tecnica?.sinopsis} />
         <Opiniones opinion={review.opinion} />
         <Recursos recursos={review.recursos} />

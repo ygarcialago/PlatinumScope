@@ -1,0 +1,21 @@
+.tagsSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.5rem;
+}
