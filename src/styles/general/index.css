@@ -117,6 +117,10 @@ header {
   width: 100%;
 }
 
+.resultados a {
+  text-decoration: none;
+}
+
 .resultados li:hover {
   background: #f0f0f0;
 }
