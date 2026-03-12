@@ -45,14 +45,17 @@ export default function SearchBar() {
   useEffect(() => {
     if (!fuse) return;
 
-    let matches = allReviews;
+    let matches: Review[];
 
     if (query) {
       matches = fuse.search(query).map(m => m.item);
-    }
+    } else {
+      
+      matches = allReviews;
 
-    if (category) {
-      matches = matches.filter(r => r.tags?.includes(category));
+      if (category) {
+        matches = matches.filter(r => r.tags?.includes(category));
+      }
     }
 
     setResults(matches);
