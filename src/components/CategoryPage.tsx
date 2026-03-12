@@ -20,6 +20,8 @@ export default function CategoryPage() {
       });
   }, [tag]);
 
+  useEffect(() => {document.title = `Platinum Scope - ${tag?.toLocaleUpperCase()}` })
+
   return (
     <>
     <SearchBar/>
