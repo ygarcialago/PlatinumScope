@@ -32,8 +32,10 @@ export default function ReviewPage() {
   return (
     <>
       <SearchBar />
-      <main className="review-container">
 
+      <img src={review.imagen} alt={review.titulo} className="gameImage"/>
+      
+      <main className="review-container">  
         <h1 className="titulo">{review.titulo}</h1>
     
         {review.imagen && (
