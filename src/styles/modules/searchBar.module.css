@@ -120,13 +120,17 @@
 
   .barraContenido {
     flex-direction: column;
-    gap: 0.75rem;
-    padding: 12px 0;
+    gap: 0.5rem;
+    padding: 8px 0;
     text-align: center;
   }
 
-  .tituloBuscador {
+  .barraContenido h2 {
     font-size: 1rem;
+  }
+
+  .tituloBuscador {
+    font-size: 0.9rem;
   }
 
   .buscadorContenedor {
@@ -135,7 +139,27 @@
 
   .buscador {
     width: 100%;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  /* 👇 SELECT adaptado */
+  .categorySelect {
+    width: 90vw;              /* ocupa todo */
+    font-size: 0.65rem;
+    padding: 6px 10px;
+    border-radius: 10px;
+  }
+
+  /* 👇 quitar tamaños fijos de desktop */
+  .buscadorContenedor,
+  .buscador {
+    width: 100%;
+  }
+
+  /* 👇 mejorar espaciado general */
+  .barraBuscador {
+    padding: 0;
   }
 
 }
