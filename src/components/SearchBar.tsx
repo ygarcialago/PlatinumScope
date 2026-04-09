@@ -81,7 +81,7 @@ export default function SearchBar() {
           onChange={(e) => {
             const value = e.target.value as GameTag | "";
             setCategory(value);
-            if (value) navigate(`/categoria/${value}`);
+            if (value) navigate(`/category/${value}`);
           }}
         >
           {availableCategories.sort().map(cat => {
