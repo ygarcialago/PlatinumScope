@@ -14,7 +14,7 @@ export function TagsSection(tags: Props) {
             <div className={styles.tagsContainer}>
                 {tags.tags.map(tag => (
                     <span key={tag} className={styles.tag}>
-                        <Link className={styles.link} to={`/categoria/${tag}`}>
+                        <Link className={styles.link} to={`/category/${tag}`}>
                             {tag.replace(/_/g, " ").toUpperCase()}
                         </Link>
                     </span>
