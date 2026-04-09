@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<IndexPage />} />
         <Route path="/review/:id" element={<ReviewPage />} />
-        <Route path="/categoria/:tag" element={<CategoryPage />} />
+        <Route path="/category/:tag" element={<CategoryPage />} />
       </Routes>
     </BrowserRouter>
   );
