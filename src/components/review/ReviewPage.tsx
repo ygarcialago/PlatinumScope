@@ -33,7 +33,7 @@ export default function ReviewPage() {
     <>
       <SearchBar />
 
-      <img src={review.imagen} alt={review.titulo} className="gameImage"/>
+      <img src={review.gameplay_imagen} alt={review.titulo} className="gameImage"/>
       
       <main className="review-container">  
         <h1 className="titulo">{review.titulo}</h1>

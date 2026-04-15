@@ -3,6 +3,7 @@
     "id": "milk_inside_a_bag_of_milk",
     "titulo": "Milk inside a bag of milk inside a bag of milk",
     "imagen": "../assets/reviewImages/milk_inside_a_bag_of_milk.jpg",
+    "gameplay_imagen": "../assets/gameplayImages/milk_inside_a_bag_of_milk.jpg",
     "tags": [
       "indie",
       "story_rich",
@@ -44,6 +45,7 @@
     "id": "resident_evil_2_remake",
     "titulo": "Resident Evil 2 Remake",
     "imagen": "../assets/reviewImages/resident_evil_2_remake.jpg",
+    "gameplay_imagen": "../assets/gameplayImages/resident_evil_2_remake.jpg",
     "tags": [
       "action",
       "adventure",
@@ -125,6 +127,7 @@
     "id": "game.exe",
     "titulo": "Game.exe",
     "imagen": "../assets/reviewImages/game.exe.jpg",
+    "gameplay_imagen": "../assets/gameplayImages/game.exe.jpg",
     "tags": [
       "indie",
       "horror",
@@ -173,6 +176,7 @@
     "id": "emily_is_away",
     "titulo": "Emily is Away",
     "imagen": "../assets/reviewImages/emily_is_away.jpg",
+    "gameplay_imagen": "../assets/gameplayImages/emily_is_away.jpg",
     "tags": [
       "indie",
       "story_rich",
@@ -218,6 +222,7 @@
     "id": "unsorted_horror",
     "titulo": "Unsorted Horror",
     "imagen": "../assets/reviewImages/unsorted_horror.jpg",
+    "gameplay_imagen": "../assets/gameplayImages/unsorted_horror.jpg",
     "tags": [
       "horror",
       "puzzle",
