@@ -45,6 +45,7 @@ export type Review = {
   id: string;
   titulo: string;
   imagen?: string;
+  gameplay_imagen?: string;
   tags: GameTag[];
   ficha_tecnica?: FichaTecnica;
   opinion?: Opinion;

@@ -30,9 +30,14 @@ export default function CategoryPage() {
 
       <ul>
         {reviews.map(r => (
+          
           <li className={styles.gamesTagged} key={r.id}>
-            <Link to={`/review/${r.id}`}>{r.titulo}</Link>
+          <Link to={`/review/${r.id}`}>
+            <img src={r.imagen} alt={r.titulo} className={styles.gameImage}/>
+            {r.titulo}
+          </Link>
           </li>
+          
         ))}
       </ul>
     </main>

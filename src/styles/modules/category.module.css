@@ -32,12 +32,12 @@
 
 .gamesTagged {
   width: 85dvw;
+  height: 20dvh;
   background: var(--color-section);
   border: 1px solid var(--color-border);
   border-radius: 10px;
   padding: 14px 18px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-  
 }
 
 .gamesTagged:hover {
@@ -53,10 +53,20 @@
   text-decoration: none;
   color: var(--color-text);
   font-weight: 600;
-  display: block;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
   width: 100%;
 }
 
 .gamesTagged a:hover {
   color: var(--color-primary);
+}
+
+.gameImage {
+  width: 17.5dvw;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 16px;
 }
