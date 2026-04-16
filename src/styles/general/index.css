@@ -57,6 +57,14 @@ main {
   min-height: 100dvh;
 }
 
+.pageContainer {
+  width: 75dvw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 /*
 .cabecera {
   width: 100%;
