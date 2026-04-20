@@ -6,6 +6,7 @@ import './styles/general/index.css'
 import FeaturedReview from "./components/mainPage/FeaturedReview";
 import CategorySection from "./components/mainPage/CategorySection";
 import RandomReview from "./components/mainPage/RandomReview";
+import StatsComponent from "./components/mainPage/StatsComponent";
 
 function IndexPage() {
   return (
@@ -16,6 +17,7 @@ function IndexPage() {
         {/* <Intro /> */}
         <FeaturedReview />
         <CategorySection/>
+        <StatsComponent />
         <RandomReview />
         </div>
       </main>
