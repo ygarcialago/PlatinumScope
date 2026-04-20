@@ -51,4 +51,6 @@ export type Review = {
   opinion?: Opinion;
   recursos?: Recurso[];
   enlaces_compra?: EnlaceCompra[];
+  addedAt: string;
+  completedAt?: string;
 };

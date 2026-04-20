@@ -39,7 +39,9 @@
         "plataforma": "Nintendo Switch",
         "enlace": "https://www.nintendo.com/es-es/Juegos/Programas-descargables-Nintendo-Switch/Milk-inside-a-bag-of-milk-inside-a-bag-of-milk-and-Milk-outside-a-bag-of-milk-outside-a-bag-of-milk-2291792.html"
       }
-    ]
+    ],
+    "addedAt": "2026-04-15T19:44:26Z",
+    "completedAt": "2023-01-23T00:00:00Z"
   },
   {
     "id": "resident_evil_2_remake",
@@ -121,7 +123,9 @@
         "plataforma": "Nintendo Switch",
         "enlace": "https://www.nintendo.com/es-es/Juegos/Programas-descargables-Nintendo-Switch/Resident-Evil-2-Cloud-2291644.html?srsltid=AfmBOopEEGHSLzFkidnYCd8mDDyid94p-9lp1BfIUzVxEtjowNGsB_RJ"
       }
-    ]
+    ],
+    "addedAt": "2026-04-15T19:24:26Z",
+    "completedAt": "2025-08-11T00:00:00Z"
   },
   {
     "id": "game.exe",
@@ -170,7 +174,9 @@
         "plataforma": "Steam",
         "enlace": "https://store.steampowered.com/app/1652680/GAMEexe/"
       }
-    ]
+    ],
+    "addedAt": "2026-04-15T19:20:26Z",
+    "completedAt": "2021-08-26T00:00:00Z"
   },
   {
     "id": "emily_is_away",
@@ -216,7 +222,9 @@
         "plataforma": "Steam",
         "enlace": "https://store.steampowered.com/app/417860/Emily_is_Away/?l=spanish"
       }
-    ]
+    ],
+    "addedAt": "2026-04-15T19:24:26Z",
+    "completedAt": "2020-05-12T00:00:00Z"
   },
   {
     "id": "unsorted_horror",
@@ -257,6 +265,8 @@
         "plataforma": "Steam",
         "enlace": "https://store.steampowered.com/app/2433730/Unsorted_Horror/"
       }
-    ]
+    ],
+    "addedAt": "2026-04-15T19:24:26Z",
+    "completedAt": "2025-03-12T00:00:00Z"
   }
 ]

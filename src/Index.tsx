@@ -1,15 +1,25 @@
 import SearchBar from "./components/SearchBar";
 //import Header from "./components/Header";
-import Intro from "./components/Intro";
+//import Intro from "./components/Intro";
 import Footer from "./components/Footer";
 import './styles/general/index.css'
+import FeaturedReview from "./components/mainPage/FeaturedReview";
+import CategorySection from "./components/mainPage/CategorySection";
+import RandomReview from "./components/mainPage/RandomReview";
+import StatsComponent from "./components/mainPage/StatsComponent";
 
 function IndexPage() {
   return (
     <>
       <SearchBar />
       <main>
-        <Intro />
+        <div className="pageContainer">
+        {/* <Intro /> */}
+        <FeaturedReview />
+        <CategorySection/>
+        <StatsComponent />
+        <RandomReview />
+        </div>
       </main>
       <Footer />
     </>
